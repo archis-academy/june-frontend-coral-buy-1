@@ -3,31 +3,8 @@
 ## Getting Started
 
 - Clone this repository (ensure that your ssh connection is properly setup).
-- Make sure to install [Node.js](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/) on your machine.
-- If you've previously already installed `Node`, but don't have `yarn`, you can install yarn by running the following command:
-
-```bash
-npm install -g yarn
-```
-
 - Make sure to have [prettier](https://prettier.io/) installed in your code editor.
 - Also make sure to have the [pesticide browser extension](https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi) installed in your browser.
-
-## Running the Project
-
-- Navigate to the project directory and run the following command to install the project dependencies:
-
-```bash
-yarn install
-```
-
-- After installing the dependencies, you can now run the project by running the following command:
-
-```bash
-yarn dev
-```
-
-This will start the development server and open the project in your default browser.
 
 ---
 
@@ -89,7 +66,7 @@ For example, if you are working on ticket `CO-120` and your branch name is `john
 git push origin johnDoe/CO-120-hero-section
 ```
 
-After pushing your changes to the remote repository, you can now create a pull request. To do this, go to the [repository](https://github.com/archis-academy/coral-buy-boilerplate) and click on the `Pull requests` tab. Then click on the `New pull request` button. Make sure that the `base` branch is `master` and the `compare` branch is `<branch-name>`. The format of the title of the pull request should be:
+After pushing your changes to the remote repository, you can now create a pull request. To do this, go to the [repository](https://github.com/archis-academy/coral-buy-en-dec) and click on the `Pull requests` tab. Then click on the `New pull request` button. Make sure that the `base` branch is `master` and the `compare` branch is `<branch-name>`. The format of the title of the pull request should be:
 
 ```bash
 [<ticket-number>] - <ticket-title-or-description>
