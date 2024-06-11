@@ -1,5 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+.brand-box {
+  display: flex;
+  justify-content:center;
+  white-space: nowrap;
+}
+
+.brd-img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.brd-img {
+  max-width: 1320px;
+  flex: 1;
 }
