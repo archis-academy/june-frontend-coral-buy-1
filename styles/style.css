@@ -1,16 +1,51 @@
 
 .brand-box {
-  display: flex;
-  justify-content:center;
+  overflow: hidden;
   white-space: nowrap;
+  max-width: 1320px;
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
 }
+
+.brand-box::after,
+.brand-box::before{
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.brand-box::before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.brand-box::after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+
+@keyframes move-rtl {
+  from{
+    transform: translateX(100%);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
 
 .brd-img{
-  display: flex;
-  justify-content: space-between;
+  display:inline-block ;
+  animation: move-rtl 10s linear infinite;
+  max-width: 1320px;
 }
 
-.brd-img {
-  max-width: 1320px;
-  flex: 1;
+.brand-box:hover  .brd-img{
+  animation-play-state: paused;
 }
