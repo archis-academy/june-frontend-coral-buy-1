@@ -23,9 +23,8 @@
 }
 
 .instagramlogo {
-  width: 150px;
-  height: 100px;
-  object-fit: contain;
+  width: 25px;
+  height: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,7 +34,7 @@
 }
 
 .instaphoto-box:hover .instagramlogo {
-  opacity: 4;
+  opacity: 1;
 }
 
 .newsletter-instagram {
