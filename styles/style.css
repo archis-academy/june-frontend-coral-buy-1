@@ -31,7 +31,7 @@
 
 @keyframes move-rtl {
   from{
-    transform: translateX(100%);
+    transform: translateX(0);
   }
 
   to{
@@ -45,6 +45,11 @@
   animation: move-rtl 10s linear infinite;
   max-width: 1320px;
 }
+
+.brd-img img{
+  padding: 0 30px;
+}
+
 
 .brand-box:hover  .brd-img{
   animation-play-state: paused;
