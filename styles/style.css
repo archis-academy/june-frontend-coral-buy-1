@@ -3,8 +3,7 @@
   overflow: hidden;
   white-space: nowrap;
   max-width: 1320px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: auto;
   position: relative;
 }
 
