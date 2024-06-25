@@ -1,8 +1,58 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+.brand-box {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 1320px;
+  margin: auto;
+  position: relative;
 }
+
+.brand-box::after,
+.brand-box::before{
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.brand-box::before{
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.brand-box::after{
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+
+@keyframes move-rtl {
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+
+.brd-img{
+  display:inline-block ;
+  animation: move-rtl 10s linear infinite;
+  max-width: 1320px;
+}
+
+.brd-img img{
+  padding: 0 30px;
+}
+
+
+.brand-box:hover  .brd-img{
+  animation-play-state: paused;
+}
+
 .discount-instagram {
   margin: 50px 0px 0px 0px;
 }
