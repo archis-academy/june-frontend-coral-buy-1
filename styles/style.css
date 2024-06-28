@@ -1,8 +1,62 @@
+header {
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.top-main {
+  background-color: #1e28320d;
+  width: 1320px;
+  height: 874px;  
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+  
+}
+
+.account-shopping {
+  font-family: "roboto";
+  white-space: nowrap;
+}
+
+.account-shopping:hover {
+  color: orangered;
+}
+
+.divider {
+  width: auto;
+  border-top: 1px solid #E3E3E3;
+  margin: 10px auto;
+  opacity: 1;
+}
+
+.main-nav:hover {
+  color: orangered;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: "roboto";
+    white-space: nowrap;
+}
+
 .brand-box {
   overflow: hidden;
   white-space: nowrap;
   max-width: 1320px;
   margin: auto;
+  margin-top: 100px;
   position: relative;
 }
 
