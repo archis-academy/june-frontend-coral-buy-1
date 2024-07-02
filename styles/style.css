@@ -1,8 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1e28320d;
+  min-height: 90vh;
+}
+
+.navbar {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.upper-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  transition: width 0.5s linear;
+  width: 24px;
+  align-items: center;
+}
+
+.search-box:hover {
+  width: auto;
+  overflow: auto;
+}
+
+.search-input {
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.account-shopping {
+  font-family: "roboto";
+  white-space: nowrap;
+  display: flex;
+  gap: 20px;
+}
+
+.Account:hover {
+  color: orangered;
+}
+
+.Shop:hover {
+  color: orangered;
+}
+
+.divider {
+  width: auto;
+  border-top: 1px solid #E3E3E3;
+  margin: 10px auto;
+  opacity: 1;
+}
+
+.bottom-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: "roboto";
+    white-space: nowrap;
+}
+
+ul li:hover {
+  color: orangered;
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 10px;
+  font-weight: 200;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  margin-left: 10%;
+}
+
+.content h1 {
+  font-size: 4em;
+  font-weight: lighter;
+  margin: 0;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  font-family: "roboto";
+}
+
+.content p {
+  font-size: 1.5em;
+  margin: 10px 0px;
+  margin-left: 10%;
+  font-family: "roboto";
+  font-weight: lighter;
+}
+
+.shop-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-left: 10%;
+  outline: 0;
+  font-family: "roboto";
+}
+
+.shop-now:hover {
+  background-color: orangered;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.image-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.item1 {
+  z-index: 1;
+}
+
+.item2 {
+  z-index: 0;
+}
+
 .brand-box {
   overflow: hidden;
   white-space: nowrap;
   max-width: 1320px;
   margin: auto;
+  margin-top: 100px;
   position: relative;
 }
 
