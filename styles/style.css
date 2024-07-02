@@ -126,6 +126,11 @@ li {
   font-size: 1em;
   margin-top: 20px;
 }
+
+.shop-now:hover {
+  color: orangered;
+}
+
 .image-container {
   flex: 1;
   display: flex;
