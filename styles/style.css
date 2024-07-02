@@ -1,32 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
-    margin-top: 30px;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-
-.top-main {
   background-color: #1e28320d;
-  width: 1320px;
-  height: 874px;  
+  min-height: 90vh;
 }
 
-.top-header {
+.navbar {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.upper-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
 }
 
-.logo {
-  
+.search-box {
+  transform: translate(-50%, -50%);
+  height: 60px;
+  line-height: 40px;
+  background: #353535;
+  padding: 10px;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.search-input {
+  background: #353535;
+  color: #fff;
+  outline: none;
+  border: none;
+  line-height: 40px;
+  width: 0px;
+  float: left;
+  font-size: 1em;
+  transition: 0,7s ease;
+}
+
+.search-box:hover > .search-input,
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
 }
 
 .account-shopping {
   font-family: "roboto";
   white-space: nowrap;
+  display: flex;
+  gap: 20px;
 }
 
-.account-shopping:hover {
+.Account:hover {
+  color: orangered;
+}
+
+.Shop:hover {
   color: orangered;
 }
 
@@ -37,11 +72,7 @@ header {
   opacity: 1;
 }
 
-.main-nav:hover {
-  color: orangered;
-}
-
-.main-nav ul {
+.bottom-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -49,6 +80,62 @@ header {
     justify-content: space-around;
     font-family: "roboto";
     white-space: nowrap;
+}
+
+ul li:hover {
+  color: orangered;
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 10px;
+  font-weight: 200;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content {
+  flex: 1;
+}
+.content h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+.content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.shop-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 20px;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .brand-box {
