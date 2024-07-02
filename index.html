@@ -4,166 +4,350 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coral Buy</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-  </head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
   <body>
-      <section class="product-grid">
-        
-        <h1 class="sctn-title"> Or Subscribe To The Newsletter </h1>
-
-      <div class="section-title-bar">
-          <ul class="sctn-br-lst">
-            <li class="lst-prdt"><a href="#">All Products</a></li>
-            <li class="lst-tsr"><a href="#">T-Shirt</a></li>
-            <li class="lst-hds"><a href="#">Hoodies</a></li>
-            <li class="lst-jkt"><a href="#">Jacket</a></li>
+    <header>
+      <nav class="navbar">
+        <nav class="upper-nav">
+          <div class="search-box">
+            <img src="images/navbar-images/navbar-search-img.png" >
+            <input type="text" placeholder="Search here..."
+            class="search-input"/>
+          </div>
+          <div class="logo">
+              <img 
+               src="images\footer-images\footer-logo.png"
+               />
+          </div>
+          <div class="account-shopping">
+            <div class="Account">
+                <i class="fa-solid fa-user"></i>
+              <a>Account</a>
+            </div>
+              <div class="Shop">
+                <i class="fa-solid fa-bag-shopping"></i>
+             <a>Shoping</a>
+            </div> 
+          </div>
+        </nav>
+      <div class="divider"></div>
+        <nav class="bottom-nav">
+          <ul>
+            <li><a>Jewelry & Accessories</a></li>
+            <li><a>Clothing & Shoes</a></li>
+            <li><a>Home & Living</a></li>
+            <li><a>Wedding & Party</a></li>
+            <li><a>Toys & Entertainment</a></li>
+            <li><a>Art & Collectibles</a></li>
+            <li><a>Craft Supplies & Tools</a></li>
           </ul>
+        </nav>
+      </nav>
+    <div class="product">
+        <div class="content">
+            <h1>Collections</h1>
+            <p>You Can Explore And Shop Many Different Collection</p>
+            <p>From Various Brands Here.</p>
+            <a class="shop-now">Shop Now</a>
+        </div>
+        <div class="image-container">
+            <img id="item1" src="images\hero-section\hero-section-woman-img.png" alt="Collection Image">
+        </div>
+    </div>
+  </header>
+    <section class="brand-box">
+      <div class="brd-img">
+        <img src="images/brand-images/brand-1.svg" alt="GRAPHIC STUDIO"/>
+        <img src="images/brand-images/brand-2.svg" alt="S.SALVA ART DIRECTOR"/>
+        <img src="images/brand-images/brand-3.svg" alt="GOLDEN STUDIO"/>
+        <img src="images/brand-images/brand-4.svg" alt="FURNITURE DESING"/>
+        <img src="images/brand-images/brand-5.svg" alt="TRAVEL LOOKBOOK"/>
+      </div>
+      <div class="brd-img">
+        <img src="images/brand-images/brand-1.svg" alt="GRAPHIC STUDIO"/>
+        <img src="images/brand-images/brand-2.svg" alt="S.SALVA ART DIRECTOR"/>
+        <img src="images/brand-images/brand-3.svg" alt="GOLDEN STUDIO"/>
+        <img src="images/brand-images/brand-4.svg" alt="FURNITURE DESING"/>
+        <img src="images/brand-images/brand-5.svg" alt="TRAVEL LOOKBOOK"/>
+      </div>
+    </section>
+    <section class="product-grid">
+        
+      <h1 class="sctn-title"> Or Subscribe To The Newsletter </h1>
 
-          <button class="sctn-btn"><img src="images/product-view-template-images/product-view-template-icon.png" alt="">Filter</button>
-      </div>
+    <div class="section-title-bar">
+        <ul class="sctn-br-lst">
+          <li class="lst-prdt"><a href="#">All Products</a></li>
+          <li class="lst-tsr"><a href="#">T-Shirt</a></li>
+          <li class="lst-hds"><a href="#">Hoodies</a></li>
+          <li class="lst-jkt"><a href="#">Jacket</a></li>
+        </ul>
 
-    <div class="product-card">
-      <div class="card-hot">
-        <div>
-          <img class="card-img" src="images/product-view-template-images/product-view-template-jogger.png" alt="Adicolor Classics Jogger" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-           <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt=""><p>Shop Now</p></a>
-          </div>
-      </div>
-      <div class="card-inf"> 
-        <h4>Adicolor Classics Jogger</h4>
-        <div class="card-inf-db">
-         <p class="category">Dress</p>
-         <p class="price">$63.85</p>
+        <button class="sctn-btn"><img src="images/product-view-template-images/product-view-template-icon.png" alt="">Filter</button>
+    </div>
+
+  <div class="product-card">
+    <div class="card-hot">
+      <div>
+        <img class="card-img" src="images/product-view-template-images/product-view-template-jogger.png" alt="Adicolor Classics Jogger" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
         </div>
-      </div>  
-      </div>
-      <div class="card">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-bag.png" alt="Nike Sportswear Futura Luxe" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div> 
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+         <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt=""><p>Shop Now</p></a>
         </div>
-        <div class="card-inf"> 
-          <h4>Nike Sportswear Futura Luxe</h4>
-          <div class="card-inf-db">
-           <p class="category">Bag</p>
-           <p class="price">$130.00</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-scraft.png" alt="Geometric print Scarf" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Geometric print Scarf</h4>
-          <div class="card-inf-db">
-           <p class="category">Scarf</p>
-           <p class="price">$53.00</p>
-          </div>
-        </div>  
-      </div>
-      <div class="card-sale">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-hoodie.png" alt="Yellow Reserved Hoodie" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-           <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Yellow Reserved Hoodie</h4>
-          <div class="card-inf-db">
-           <p class="category">Dress</p>
-           <p class="old-price">$364</p>
-           <p class="price">$155</p>
-          </div>
-        </div> 
-      </div>
-      <div class="card-hot">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-dress.png" alt="Basic Dress Green" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Basic Dress Green</h4>
-          <div class="card-inf-db">
-           <p class="category">Dress</p>
-           <p class="price">$236.00</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-sale">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-shoe.png" alt="Nike Air Zoom Pegasus" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Nike Air Zoom Pegasus</h4>
-          <div class="card-inf-db">
-           <p class="category">Shoe</p>
-           <p class="old-price">$220</p>
-           <p class="price">$198</p>
-          </div>
-        </div>  
-      </div>
-      <div class="card">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-jacket.png" alt="Nike Repel Miler" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Nike Repel Miler</h4>
-          <div class="card-inf-db">
-           <p class="category">Dress</p>
-           <p class="price">$120.50</p>
-          </div>
-        </div>  
-      </div>
-      <div class="card-hot">
-        <img class="card-img" src="images/product-view-template-images/product-view-template-glasses.png" alt="Nike Sportswear Futura Luxe" width="312px" height="400px">
-        <div class="card-icn">
-          <div class="card-icn-db">
-           <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
-           <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
-          </div>
-          <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
-        </div>
-        <div class="card-inf"> 
-          <h4>Nike Sportswear Futura Luxe</h4>
-          <div class="card-inf-db">
-           <p class="category">Glasses</p>
-           <p class="price">$160.00</p>
-          </div>
-        </div>  
+    </div>
+    <div class="card-inf"> 
+      <h4>Adicolor Classics Jogger</h4>
+      <div class="card-inf-db">
+       <p class="category">Dress</p>
+       <p class="price">$63.85</p>
       </div>
     </div>  
-  </section>
-  </body>
-</html>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-bag.png" alt="Nike Sportswear Futura Luxe" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div> 
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Nike Sportswear Futura Luxe</h4>
+        <div class="card-inf-db">
+         <p class="category">Bag</p>
+         <p class="price">$130.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-scraft.png" alt="Geometric print Scarf" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Geometric print Scarf</h4>
+        <div class="card-inf-db">
+         <p class="category">Scarf</p>
+         <p class="price">$53.00</p>
+        </div>
+      </div>  
+    </div>
+    <div class="card-sale">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-hoodie.png" alt="Yellow Reserved Hoodie" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+         <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Yellow Reserved Hoodie</h4>
+        <div class="card-inf-db">
+         <p class="category">Dress</p>
+         <p class="old-price">$364</p>
+         <p class="price">$155</p>
+        </div>
+      </div> 
+    </div>
+    <div class="card-hot">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-dress.png" alt="Basic Dress Green" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Basic Dress Green</h4>
+        <div class="card-inf-db">
+         <p class="category">Dress</p>
+         <p class="price">$236.00</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-sale">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-shoe.png" alt="Nike Air Zoom Pegasus" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Nike Air Zoom Pegasus</h4>
+        <div class="card-inf-db">
+         <p class="category">Shoe</p>
+         <p class="old-price">$220</p>
+         <p class="price">$198</p>
+        </div>
+      </div>  
+    </div>
+    <div class="card">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-jacket.png" alt="Nike Repel Miler" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Nike Repel Miler</h4>
+        <div class="card-inf-db">
+         <p class="category">Dress</p>
+         <p class="price">$120.50</p>
+        </div>
+      </div>  
+    </div>
+    <div class="card-hot">
+      <img class="card-img" src="images/product-view-template-images/product-view-template-glasses.png" alt="Nike Sportswear Futura Luxe" width="312px" height="400px">
+      <div class="card-icn">
+        <div class="card-icn-db">
+         <a class="card-icn-hrt" href="#"><img src="images/product-view-template-images/heart.png" alt=""></a>
+         <a class="card-icn-src" href="#"><img src="images/product-view-template-images/search-img.png" alt=""></a>
+        </div>
+        <a class="card-icn-shp" href="#"><img src="images/product-view-template-images/shoping-icon.svg" alt="">Shop Now</a>
+      </div>
+      <div class="card-inf"> 
+        <h4>Nike Sportswear Futura Luxe</h4>
+        <div class="card-inf-db">
+         <p class="category">Glasses</p>
+         <p class="price">$160.00</p>
+        </div>
+      </div>  
+    </div>
+  </div>  
+</section>
+    <div class="newsletter-instagram">
+      <div class="discount-instagram">
+        <h2>Follow products and discounts on Instagram</h2>
+      </div>
+      <div class="instagram-photo">
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-05.png" 
+            alt="logo"
+            width="200"
+            height="200"
+          /> 
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-06.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-07.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-08.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-09.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+
+        <div class="instaphoto-box">
+          <img
+            src="images/newsletter-images/newsletter-10.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
+          <div class="instagramlogo">
+            <img
+              src="images/newsletter-images/instagram-logo.png"
+              alt="logo"
+              width="75"
+              height="50"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="subscribeheadline">
+          <h2>Or Subscribe To The Newsletter</h2>
+        </div>
+        <div class="email">
+          <input
+            type="email"
+            class="Instagram-email"
+            placeholder="Email address..."
+          />
+          <button class="instagramsubmitbutton">SUBMIT</button>
+        </div>
+      </div>
+    </div>
