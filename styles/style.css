@@ -95,12 +95,12 @@
 
 .product-card {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px , 300px));
   gap: 24px;
+  justify-content: center;
 }
 .card-hot {
   background-color: #fff;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -125,15 +125,15 @@
 }
 
 .product-card .card-hot:hover .card-icn {
-  bottom: 110px;
+  bottom: 80px;
 }
 
 .product-card .card-sale:hover .card-icn {
-  bottom: 110px;
+  bottom: 80px;
 }
 
 .product-card .card:hover .card-icn {
-  bottom: 110px;
+  bottom: 80px;
 }
 
 .card-inf h4{
@@ -142,7 +142,10 @@
   margin: 15px 0;
 }
 
-.card-inf p{
+.card-inf-db{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
 }
 
 .card-icn{
@@ -151,7 +154,8 @@ justify-content: space-between;
 }
 
 .card-icn-db{
-display: block;
+display:flex;
+gap: 15px;
 }
 
 .card-icn-hrt {
@@ -162,30 +166,41 @@ display: block;
 .card-icn-shp {
   color: #fff;
   text-decoration: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.card-icn:hover .card-icn-shp{
+  color: #FF6F61;
 }
 
 .category {
   color: #888;
   margin-bottom: 10px;
 }
+
+.card-sale .price{
+  color: #FF6F61;
+}
+
 .price {
   font-size: 14px;
   color: #333;
+  font-weight: 600;
 }
 .card {
   background-color: #fff;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
 .card-sale {
   background-color: #fff;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
 .product-card .old-price {
   text-decoration: line-through;
   color:#888 ;
-  margin-right: 5px;
+  margin: 0 0 0 auto;
 }
