@@ -22,32 +22,25 @@ header {
 }
 
 .search-box {
-  transform: translate(-50%, -50%);
-  height: 60px;
-  line-height: 40px;
-  background: #353535;
-  padding: 10px;
-  border-radius: 60px;
-  cursor: pointer;
-  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  transition: width 0.5s linear;
+  width: 24px;
+  align-items: center;
+}
+
+.search-box:hover {
+  width: auto;
+  overflow: auto;
 }
 
 .search-input {
-  background: #353535;
-  color: #fff;
+  background: transparent;
+  font-size: 16px;
   outline: none;
   border: none;
-  line-height: 40px;
-  width: 0px;
-  float: left;
-  font-size: 1em;
-  transition: 0,7s ease;
-}
-
-.search-box:hover > .search-input,
-.search-input:focus {
-  width: 240px;
-  margin: 0px 8px;
+  border-bottom: 1px solid;
 }
 
 .account-shopping {
@@ -100,35 +93,46 @@ li {
 .product {
   display: flex;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 100px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .content {
   flex: 1;
+  margin-left: 10%;
 }
+
 .content h1 {
-  font-size: 2.5em;
+  font-size: 4em;
+  font-weight: lighter;
   margin: 0;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  font-family: "roboto";
 }
+
 .content p {
-  font-size: 1.2em;
-  margin: 10px 0;
+  font-size: 1.5em;
+  margin: 10px 0px;
+  margin-left: 10%;
+  font-family: "roboto";
+  font-weight: lighter;
 }
+
 .shop-now {
   display: inline-block;
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
   font-size: 1em;
   margin-top: 20px;
+  margin-left: 10%;
+  outline: 0;
+  font-family: "roboto";
 }
 
 .shop-now:hover {
-  color: orangered;
+  background-color: orangered;
 }
 
 .image-container {
@@ -136,11 +140,21 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 }
+
 .image-container img {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
+}
+
+.item1 {
+  z-index: 1;
+}
+
+.item2 {
+  z-index: 0;
 }
 
 .brand-box {
