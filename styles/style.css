@@ -362,6 +362,10 @@ li {
   bottom: 80px;
 }
 
+.product-card .card-hot-op:hover .card-icn {
+  bottom: 80px;
+}
+
 .card-inf h4{
   display: flex;
   justify-content: start;
